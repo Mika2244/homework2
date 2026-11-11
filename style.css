@@ -77,19 +77,26 @@ hr {
 }
 
 .top_disco {
-  width: 140px;
+  width: 200px;
   position: absolute;
+   height: auto;               /* שומר על פרופורציות התמונה המקוריות */
+  object-fit: contain;        /* מונע חיתוך של התמונה */
+  mix-blend-mode: multiply;
+  background-color: transparent; /* לוודא שאין רקע לבן פנימי */
+  box-shadow: none; /* במידה ורוצים לבטל את הצל הלבן הישן */
+  
   top: 20px;
   right: 8%;
   z-index: 1;
 }
 
 .low_drinks {
-  width: 130px;
-  height: 130px;
-  object-fit: cover;
-  border-radius: 20px;
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.12);
+  width: 140px;
+  height: auto;               /* שומר על פרופורציות התמונה המקוריות */
+  object-fit: contain;        /* מונע חיתוך של התמונה */
+  mix-blend-mode: multiply;
+  background-color: transparent; /* לוודא שאין רקע לבן פנימי */
+  box-shadow: none; /* במידה ורוצים לבטל את הצל הלבן הישן */
   transition: transform 0.3s ease;
 }
 
@@ -103,11 +110,6 @@ hr {
   bottom: 30px;
 }
 
-#pink_drink {
-  position: absolute;
-  right: 12%;
-  bottom: 30px;
-}
 
 /* ==========================================
    3. חלק מרכזי (Middle Container)
